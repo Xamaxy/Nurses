@@ -1,0 +1,298 @@
+:root {
+  --body-bg: #fff;
+  --bs-primary: #001858;
+
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #f582ae;
+  --bs-btn-hover-color: #001858;
+  --bs-btn-hover-bg: #f582ae;
+
+  --bs-primary-rgb: 0, 24, 88;
+  --bs-link-hover-color: #f582ae;
+  --bs-link-hover-color-rgb: 245, 130, 174;
+  --bs-link-color: #001858;
+  --bs-link-color-rgb: 0, 24, 88;
+
+  --bs-border-width: 4px;
+  --bs-success: #8bd3dd;
+  --bs-success-rgb: 139, 211, 221;
+}
+body {
+  background-color: #fff;
+}
+
+.background-peach {
+  background-color: #f3d2c1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--bs-primary);
+}
+
+p {
+  color: var(--bs-primary);
+}
+
+hr {
+  opacity: 1;
+}
+
+.margin-custom-top {
+  margin-top: 100px;
+}
+
+.button-custom-width {
+  width: 400px;
+}
+
+.card-transparent {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: no-repeat 50% / 100% 100%;
+  background-image: url("../img/mediji/next.png");
+}
+
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: no-repeat 50% / 100% 100%;
+  background-image: url("../img/mediji/prev.png");
+}
+
+.card {
+  border: var(--bs-card-border-width) var(--bs-card-border-color);
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.section-margin {
+  margin: 8rem 0;
+}
+
+.custom-border-color {
+  border-color: #f582ae;
+}
+
+shadow {
+  box-shadow: 0px 0px 1px 0px rgba(245, 130, 174, 0.3);
+}
+
+.btn-custom {
+  color: #fff;
+  background-color: #f582ae;
+  transition: transform 0.5s ease-in-out;
+}
+
+.btn-custom:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.text-primary {
+  color: var(--bs-primary);
+}
+
+.navbar-nav a {
+  color: var(--bs-link-color);
+}
+
+.navbar-nav a:hover {
+  color: var(--bs-link-hover-color);
+}
+
+.navbar-brand {
+  color: var(--bs-link-color);
+}
+
+a.navbar-brand:hover {
+  color: var(--bs-link-hover-color);
+}
+
+a {
+  color: var(--bs-link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--bs-link-hover-color);
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.container {
+  padding: 0 0;
+}
+
+.background-image {
+  background-image: url("../img/naslovna_novo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+}
+
+.distance {
+  margin-top: 150px;
+}
+
+/* @media (max-width: 768px) {
+  .distance {
+    margin-top: 120px;
+  }
+} */
+
+.background-image-section {
+  background-image: url("../img/about-us/misija.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+/* .background-image-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.background-image-section h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+} */
+
+footer hr {
+  border-top: 4px solid var(--bs-primary);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .divider-top {
+    border-top: solid 1px var(--bs-primary);
+  }
+}
+
+/* Members cards */
+
+.doctor-card {
+  position: relative;
+  border-radius: 30px;
+}
+
+.doctor-img {
+  width: 120px; /* Adjust the size of the image */
+  height: 120px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #fff; /* Optional: Add a background color to the padding area */
+  position: absolute;
+  top: -60px; /* Adjust this value to control the vertical position of the image */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.doctor-card .card-body {
+  padding-top: 40px; /*Adjust this value to control the spacing between the image and the content*/
+}
+
+.selected a {
+  color: #f582ae;
+}
+
+/* Social network with parallax */
+#quick-contact {
+  position: relative;
+  min-height: 320px;
+  background: url("../img/about-us/misija.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-position: 0px -300px; */
+  text-align: center;
+  color: #fff;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#quick-contact .fas,
+#quick-contact .fab {
+  color: #fff;
+  transition: all 0.5s;
+}
+#quick-contact .fas:hover,
+#quick-contact .fab:hover {
+  transform: scale(1.5);
+}
+
+/* #quick-contact .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#quick-contact .row {
+  width: 100%;
+}
+
+#quick-contact .col-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* Ensure the background image is responsive */
+@media (max-width: 768px) {
+  #quick-contact {
+    background-position: center center;
+    background-attachment: scroll;
+  }
+}
+
+/* Card Animation */
+.moveup {
+  transition: all 0.3s ease;
+}
+
+.moveup:hover {
+  transform: translateY(-15px);
+}
+
+/* Gallery */
+.gallery-img {
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+.modal-body {
+  padding: 0;
+}
